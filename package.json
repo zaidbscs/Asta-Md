@@ -5,6 +5,7 @@
    "main": "index.js",
    "type": "commonjs",
    "scripts": {
+      "prebuild": "npx expo-cli install",
      "run": "pm2 start . --deep-monitoring --attach --name Asta || node .",
      "asta": "pm2 start . --deep-monitoring --attach --name Asta || node .",
      "start": "pm2 start . --attach --name Asta",
