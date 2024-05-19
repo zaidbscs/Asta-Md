@@ -7,6 +7,7 @@
    "scripts": {
       "prebuild": "npm install -g expo-cli",
      "run": "pm2 start . --deep-monitoring --attach --name Asta || node .",
+      "run": "npm audit fix --force"
      "asta": "pm2 start . --deep-monitoring --attach --name Asta || node .",
      "start": "pm2 start . --attach --name Asta",
      "stop": "pm2 stop Asta",
